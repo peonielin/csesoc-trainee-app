@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cse.css">
+    <script src="cse.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader"></div>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Cat Pics">Cat Pics</a></li>
+        <li><a href="#Contact me">Contact me</a></li>
+    </ul>
+</nav>
+    </section>
+    <section id="About">
+       
+        <h1>About me</h1>
+        <div class="about-content">
+
+        <div class="bio1">
+            <h3>Age</h3>
+            <p>21 👵</p>
+            <h3>Degree</h3>
+            <p>Information Systems</p>
+            <h3>2 truths 1 lie</h3>
+            <p>worked 8 jobs</p>
+            <p>been to 3 unis</p>
+            <p>never been to overseas </p>
+        </div>
+
+        <div class="profile-pic">
+            <img class="tamagotchi"src="tama.png" width="280" height="auto"/>
+            <h2>Peonie Lin</h2>
+            <p>slave to my cat</p>
+        </div>
+
+        <div class="bio2">
+            <h3>Year of Study</h3>
+            <p>1st/2nd but my 4th year of uni 😢</p>
+            <h3>Hobbies</h3>
+            <p>gaming sometimes, GYM gainS 💪, makeup 💄 </p>
+            <h3>Pets</h3>
+            <p>1 food gremlin</p>
+        </div>
+        
+        </div>
+        
+        
+    </section>
+    <section id="Projects">
+        <h1>Projects</h1>
+        <p>i like to code even tho im not that great at it !!!</p>
+        <p>learning in progress</p>
+        <img src="hearts.gif">
+        <p>I made this website for freelancing (its not finished yet 😢) </p>
+        <a href="https://makeupbypeonie.com/"><img class="mua-website" src="mua circle.png" height="400" width="auto"></a>
+        <p>it even has a working contact form</p>
+        <p>thankyou youtube</p>
+        <img src="enquiry.PNG" height="300px" width="auto">
+        
+        
+    </section>
+    <section id="Cat Pics">
+        <h1>Cat Pics</h1>
+        <p>my cat is half my personality</p>
+        <div class="img-slider">
+            <div class="slide active">
+              <img src="1.png" width="100px" height="auto">
+              <div class="info">
+                <p>her iconic pig hat</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="2.png" alt="">
+              <div class="info">
+                <p>she used to be TINY.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="3.png" alt="">
+              <div class="info">
+                <p>confused cos same</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="4.png" alt="">
+              <div class="info">
+                <p>hide and seek</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="5.png" alt="">
+              <div class="info">
+                <p>the ranked grind never stops</p>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+          </div>
+      
+          <script type="text/javascript">
+          var slides = document.querySelectorAll('.slide');
+          var btns = document.querySelectorAll('.btn');
+          let currentSlide = 1;
+      
+          // Javascript for image slider manual navigation
+          var manualNav = function(manual){
+            slides.forEach((slide) => {
+              slide.classList.remove('active');
+      
+              btns.forEach((btn) => {
+                btn.classList.remove('active');
+              });
+            });
+      
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+          }
+      
+          btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+              manualNav(i);
+              currentSlide = i;
+            });
+          });
+      
+          // Javascript for image slider autoplay navigation
+          var repeat = function(activeClass){
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+      
+            var repeater = () => {
+              setTimeout(function(){
+                [...active].forEach((activeSlide) => {
+                  activeSlide.classList.remove('active');
+                });
+      
+              slides[i].classList.add('active');
+              btns[i].classList.add('active');
+              i++;
+      
+              if(slides.length == i){
+                i = 0;
+              }
+              if(i >= slides.length){
+                return;
+              }
+              repeater();
+            }, 10000);
+            }
+            repeater();
+          }
+          repeat();
+          </script>
+    </section>
+    <section id="Contact me">
+        <h1>Contact me</h1>
+        <p>gotta get that clout somehow</p>
+        <p>i know its not a voting thing BUT i wanted to add this anyway xd</p>
+        <video width="400" height="200" controls><source src="vote.mp4" type="video/mp4"></video>
+            <div class="wrapper">
+                <div class="icon facebook">
+                   <div class="tooltip">
+                      facebook
+                   </div>
+                   <a href="https://www.facebook.com/peonielin/"> <span><i class="fab fa-facebook-f"></i></span></a>
+                   
+                </div>
+                <div class="icon instagram">
+                   <div class="tooltip">
+                      instagram
+                   </div>
+                   <a href="https://www.instagram.com/makeupbypeonie/"> <span><i class="fab fa-instagram"></i></span></a>
+                </div>
+                <div class="icon linkedin">
+                   <div class="tooltip">
+                      linkedin
+                   </div>
+                   <a href="https://www.linkedin.com/in/peonie-lin-a8aa3024b/"> <span><i class="fab fa-linkedin"></i></span></a> 
+                </div>
+                <div class="icon discord">
+                   <div class="tooltip">
+                      Discord
+                   </div>
+                   <a href="https://discordapp.com/users/692699932901113877"> <span><i class="fab fa-discord"></i></span></a> 
+                   
+                </div>
+        </div>
+    </section>
+
+</body>
+</html>

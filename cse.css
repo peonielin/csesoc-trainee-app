@@ -9,7 +9,7 @@
     justify-content: center;
     background: white url(preloader2.gif) no-repeat center center;
     transition: opacity 1s, visibility 3s;
-    z-index: 100;
+    z-index: 999;
   }
   
   .loader--hidden {

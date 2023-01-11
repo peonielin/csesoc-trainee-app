@@ -8,8 +8,8 @@
     align-items: center;
     justify-content: center;
     background: white url(preloader2.gif) no-repeat center center;
-    transition: opacity 1s, visibility 3s;
-    z-index: 999;
+    transition: opacity 3s, visibility 3s;
+    z-index: 9999;
   }
   
   .loader--hidden {

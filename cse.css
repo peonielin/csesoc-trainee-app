@@ -89,7 +89,7 @@ section {
 }
 
 h1 {
-    z-index: 9999;
+    z-index: 200;
     width: max-content;
     text-transform: uppercase;
     font-size: 30px;

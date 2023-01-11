@@ -431,3 +431,13 @@ h2 {
     text-decoration: none;
     color: black;
   }
+
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
